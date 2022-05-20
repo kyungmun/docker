@@ -6,7 +6,7 @@
 * WORKDIR /app
     - 도커네 작업 디렉토리 지정
 
-* COPY package.josn .
+* COPY package.json .
     - dockerfile 있는 경로의 해당 파일을 도커 이미지내 작업 경로에 복사
 
 * RUN npm install
@@ -20,3 +20,21 @@
 
 * CMD ["node", "app.mjs"]
     - 도커내에서 실행 명령 수행
+
+# 이미지 빌드
+
+* docker build .
+    - dockerfile 파일이 있는 위치에서 명령 수행
+    
+# 도커 이미지 확인
+
+* docker image ls
+    - image list 출력
+
+# 도커 컨테이너 실행
+
+* docker run -p 3000:3000 [image-name]
+    - 도커내 서비스 포트잉 3000 번을 외부에 3000 으로 매핑
+# 실행중인 도커 컨테이너 확인
+
+* docker ps
