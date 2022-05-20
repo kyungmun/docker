@@ -24,7 +24,7 @@
 # 이미지 빌드
 
 * docker build .
-    - dockerfile 파일이 있는 위치에서 명령 수행
+    - dockerfile 파일이 있는 위치에서 명령 실행하면 이미지 생성 됨
     
 # 도커 이미지 확인
 
